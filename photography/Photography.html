@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+
+    <title>PhotoGraphy</title>
+
+    <!--    Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Dancing+Script&display=swap" rel="stylesheet">
+<!--    Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            background-color: #121212;
+        }
+
+/* Navigation */
+        #nav {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            width: 95%;
+            margin: 10px auto;
+        }
+
+        .fixed-top {
+            background-color: #121212;
+        }
+        .nav-item {
+            font-size: 15px;
+            padding: .5rem;
+            opacity: 0.5;
+            transition: 0.2s;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            opacity: 1;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 20px!important;
+            background-color: rgba(255, 255, 255, 1);
+            text-decoration: none!important;
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+/* Header */
+        header h1 {
+            text-align: center;
+            font-size: 70px;
+            color: rgba(255, 255, 255, 0.87);
+            margin-top: 70px;
+
+        }
+        header p {
+            font-size: 20px;
+            text-align: center;
+            font-family: "Dancing Script", sans-serif;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        header hr{
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 20%;
+        }
+
+/* Portfolio */
+        #portfolio {
+            width: 90%;
+            margin: auto;
+        }
+
+        .portfolio-content {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            margin: 100px auto 70px auto;
+        }
+
+        .work-info {
+            padding: 20px;
+            text-align: right;
+        }
+
+        #portfolio .work-info h2 {
+           font-family: "Dancing Script", sans-serif;
+           color: rgba(255, 255, 255, 0.87);
+           font-size: 60px;
+           font-weight: bold;
+           opacity: 87%;
+        }
+
+        #portfolio .work-info p {
+           font-size: 15px;
+           color: rgba(255, 255, 255, 0.5);
+        }
+
+        #portfolio img {
+            filter: brightness(50%);
+            height: 40vh;
+            width: 40vw;
+            transition: 0.5s;
+        }
+
+        #portfolio img:hover {
+            filter: brightness(100%);
+            transform: scale(1.1)
+        }
+
+/* Responsive layouts */
+
+        @media (max-width: 850px) {
+
+            #portfolio .work-info h2 {
+               font-size: 40px;
+            }
+            .photographer-info h2 {
+               font-size: 30px;
+             }
+
+             .photographer-info p {
+               font-size: 20px;
+             }
+        }
+
+        @media (max-width: 750px) {
+
+        /* Header */
+            header h1 {
+            font-size: 35px;
+            }
+
+            header p {
+            font-size: 15px;
+            }
+
+        /*Portfolio*/
+            .portfolio-content {
+            display: grid;
+            grid-template-columns: 100%;
+            justify-self: center;
+            align-self: center;
+            margin: 100px auto 70px auto;
+        }
+        .work-info {
+            text-align: center;
+        }
+
+        #portfolio .work-info h2 {
+           font-size: 35px;
+        }
+
+        #portfolio .work-info p {
+           text-align: center;
+           font-size: 15px;
+        }
+        #portfolio img {
+            height: 30vh;
+            width: 100%;
+        }
+
+        /*Photographer*/
+            .photographer-content {
+            display: grid;
+            grid-template-columns: 100%;
+            margin: auto;
+            }
+
+           .photographer-info h2 {
+           font-size: 25px;
+            }
+
+           .photographer-info p {
+           font-size: 15px;
+            }
+        }
+        @media (max-width: 850px) {
+
+            #portfolio .work-info h2 {
+               font-size: 35px;
+            }
+            #portfolio .work-info p {
+               font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+<!--        Navigation-->
+        <nav class="fixed-top">
+            <ul id="nav" class="navbar-dark">
+                <li><a class="nav-item navbar-brand" href="#">Home</a></li>
+                <li><a class="nav-item navbar-brand" href="#">About</a></li>
+                <li><a class="nav-item navbar-brand" href="#">Photographers</a></li>
+
+                <a href=""><button class="btn">SignUp</button></a>
+            </ul>
+        </nav>
+<!--        Header-->
+        <h1>PhotoGraphy</h1>
+        <p>Home of Beauty</p>
+        <hr>
+    </header>
+    <!--Portfolio-->
+    <main id="portfolio">
+        <div class="portfolio-content">
+            <img src="ex1.jpg" alt="">
+            <div class="work-info">
+                <h2>Timothy Kabutey</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <img src="ex2.jpg" alt="">
+            <div class="work-info">
+                <h2>Stephen Kofi</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <img src="ex3.jpg" alt="">
+            <div class="work-info">
+                <h2>Nii Papi</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <img src="ex4.jpg" alt="">
+            <div class="work-info">
+                <h2>Danny Yawson</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

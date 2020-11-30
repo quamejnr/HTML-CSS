@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: Lobster;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+      }
+
+        p {
+            font-family: "PT Serif";
+            font-size: 16px;
+        }
+
+      table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 30%;
+
+      }
+
+      th,td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+      }
+
+      th {
+            background-color:lightgray;
+      }
+
+      button:hover {
+             background-color:orange;
+      }
+
+<!--      a::before {-->
+<!--            content: "\21d2 Click here: ";-->
+<!--            font-weight: bold;-->
+<!--      }-->
+
+
+<!--Responsive designs: Using media queries to alter how web page looks on different screens -->
+
+      @media screen and (min-width: 760px) {
+        h1::before {
+             content: "Welcome To My Web Page";
+
+        }
+      }
+
+      @media (max-width: px) {
+        h1::before {
+             content: "Welcome";
+
+        }
+      }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Twitter</a></li>
+    </nav>
+    <h1>
+        This is the picture of... Yep I don't know what it is
+    </h1>
+    <img style="padding:10px" src="copy.jpg" class="rounded-circle" height="30%" width="30%" alt="">
+    <div class="container d-flex" style="padding:10px">
+        <a class="btn btn-outline-info btn-sm mb-3" href="quamejnr.herokuapp.com" target="_blank">Quame's Blog</a>
+    </div>
+    <div>
+        <div align="Center">
+            <form action="quamejnr.herokuapp.com" method="POST">
+                <label for="username">Username</label> 
+                <input type="username" placeholder="Username" name="Username">
+                
+                <label for="password">Password</label>
+                <input type="name" name="Password">
+                
+                <label for="datepicker">Pick a date</label> 
+                <input type="date" name="date">
+                
+<!--                Used to choose one of many options-->
+                <p>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+
+                </p>
+                <p>
+                    <input type="Reset" value="Reset">
+                    <button>Submit</button>
+                </p>
+
+<!--                using data list to autocomplete input-->
+
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="Ghana">
+                    <option value="Niger">
+                    <option value="Nigeria">
+                    <option value="South Africa">
+                </datalist>
+            </form>
+        </div>
+
+        <div style="container mb-4">
+            <table>
+            <tr>
+                <th>Adidas</th>
+                <th>Converse</th>
+                <th>Nike</th>
+            </tr>
+            <tr>
+                <td>Stan smith</td>
+                <td>All Stars</td>
+                <td>Air Force 1</td>
+
+            </tr>
+        </table>
+        </div>
+
+    </div>
+    <hr>
+<!--My Skills-->
+    <div>
+        <p>My Skills
+            <ul>
+                <li>Python</li>
+                <progress min="0" max="100" value="80" ></progress><br>
+                <li>Django</li>
+                <progress min="0" max="100" value="40" ></progress><br>
+                <li>HTML</li>
+                <progress min="0" max="100" value="80" ></progress><br>
+
+            </ul>
+        </p>
+    </div>
+<!--Contact me form-->
+    <div style="padding:60px" class="mb-4">
+        <h1><span>Contact Me</span></h1>
+        <form action="">
+            <input type="text" name="name">
+            <br><br>
+            <input type="email" name="email">
+            <br><br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br><br>
+            <input type="submit" name="submit" value="Send">
+        </form>
+    </div>
+<footer>
+    <div class="copyright">
+    &copy; 2020 My Blog. All rights reserved
+</div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
