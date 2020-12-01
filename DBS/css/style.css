@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-    background-color: var(--grey);
+    background-color: var(--white);
     position: sticky;
     top: 0px;
     z-index: 2;
@@ -167,6 +167,8 @@ nav ul li a {
     border-image: linear-gradient(to right, var(--navy), teal, var(--red));
     border-image-slice: 1;
 }
+
+
 #section-2 .sm-icons span i {
     color: var(--navy);
     margin: 20px 30px 0px 0px;
@@ -272,7 +274,7 @@ nav ul li a {
     height: auto;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 850px){
     #section-2b .collection {
         width: 95%;
         text-align: center;
@@ -408,22 +410,12 @@ nav ul li a {
     color: var(--navy);
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 850px){
     #section-3 {
         text-align: center;
   
     }
 }
-
-#section-3 .sale-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#section-3 .sale-header h2 {
-    font-size: 60px;
-}
-
 
 #section-3 .sale-image {
     width: 100%;
@@ -438,9 +430,9 @@ nav ul li a {
     padding: 20px 0px;
 }
 
-
 #section-3 .sale-info h3 {
-    background-color: var(--white);
+    background-color: var(--navy);
+    color: var(--white);
     position: relative;
     right: 60px;
     padding: 10px;
@@ -449,13 +441,19 @@ nav ul li a {
     line-height: 40px;
     font-weight: bolder;
     text-transform: capitalize;
+    box-shadow: var(--navy) 0px 10px 30px -10px;
+    
 }
 
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 850px){
     #section-3 .sale-info h3 {
+        background-color: var(--white);
+        color: var(--navy);
         left: 0px;
         line-height: normal;
         margin-bottom: 40px;
+        box-shadow: none;
     }
 }
 
@@ -500,7 +498,7 @@ nav ul li a {
     height: 450px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     #section-3 .sale-price {
         margin: 25px;
     }
@@ -556,16 +554,26 @@ nav ul li a {
     }
 }
 
+
+
 /* Footer  */
-/* #footer {
-    background-color: var(--navy);
-    color: var(--grey);  
-    height: 500px;
-    padding: 100px;
+#footer {
+    display: none;
 }
 
-#footer .footer-head {
-    text-align: center;
-} */
-
- 
+@media only screen and (max-width: 850px){
+    #footer {
+        display: block;
+        background-color: var(--navy);
+        color: var(--grey);  
+        height: auto;
+        padding: 100px;
+    } 
+    #footer .sm-icons {
+        text-align: center;
+    }
+    #footer .sm-icons span i {
+        color: var(--grey);
+        margin: 0px 20px;
+    }
+}
